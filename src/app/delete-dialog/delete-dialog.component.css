@@ -1,0 +1,32 @@
+div {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    padding: .5rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: .25rem;
+    border: 1px solid black;
+}
+
+.mat-dialog-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.cancel {
+    background-color: rgb(187, 187, 187);
+    color: black;
+}

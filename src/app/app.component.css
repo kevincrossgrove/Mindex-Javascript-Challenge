@@ -1,3 +1,14 @@
+.page-title-container {
+  display: flex;
+  justify-content: center;
+}
 .page-title {
   text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: #0167BB;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  border-radius: .35rem;
+  border: 1px solid rgba(255, 255, 255, 0.342);
 }

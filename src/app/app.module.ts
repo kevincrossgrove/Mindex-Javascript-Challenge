@@ -4,23 +4,31 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
-import {AppComponent} from './app.component';
-import {BackendlessMockService} from './backendless-mock.service';
-import {EmployeeComponent} from './employee/employee.component';
-import {EmployeeListComponent} from './employee-list/employee-list.component';
-import {EmployeeService} from './employee.service';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import {AppComponent} from './app.component';
+import {EmployeeComponent} from './employee/employee.component';
+import {EmployeeListComponent} from './employee-list/employee-list.component';
+
+import {EmployeeService} from './employee.service';
+import {BackendlessMockService} from './backendless-mock.service';
+import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
+import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EditDialogComponent,
+    DeleteDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatInputModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    FlexLayoutModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

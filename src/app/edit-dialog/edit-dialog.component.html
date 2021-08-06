@@ -1,0 +1,17 @@
+<div mat-dialog-title class="title">
+    UPDATE COMPENSATION
+</div>
+<div mat-dialog-content class="content">
+    <div class="name">{{ data.name }}</div>
+    <div class="position">{{ data.position }}</div>
+    <p class="comp-form">
+        <mat-form-field [style.width.px]=300>
+            <mat-label>Compensation</mat-label>
+            <input matInput [(ngModel)]="data.comp" placeholder="Enter Compensation" fromControlName="compensation" type="number" />
+        </mat-form-field>
+    </p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data.comp" class="save">Save</button>
+    <button mat-button [mat-dialog-close]="false" class="cancel">Cancel</button>
+</div>
